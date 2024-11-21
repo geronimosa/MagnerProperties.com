@@ -1,0 +1,245 @@
+.featurelist{
+    font-size: 11px;
+    overflow: auto;
+    padding: 6px;
+    background-color: white;
+  -moz-box-shadow:    inset 0 0 3px #D3D3D3;
+   -webkit-box-shadow: inset 0 0 3px #D3D3D3;
+   box-shadow:         inset 0 0 3px #D3D3D3;
+}
+.featurelist li{
+    text-align: left;
+    list-style-type: none;
+    width:100px;
+    float: left;
+    display: block;
+    margin-left: -22px;
+     
+}
+
+.MarketingDescription{
+    font-size: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow:  auto;
+    padding: 6px;
+    background-color: white;
+  -moz-box-shadow:    inset 0 0 3px #D3D3D3;
+   -webkit-box-shadow: inset 0 0 3px #D3D3D3;
+   box-shadow:         inset 0 0 3px #D3D3D3;
+}
+.Area{
+    padding: 1px;
+    background-color: white;
+}
+.Price{
+    font-size: 16px;
+}
+.Type{}
+
+.contentarea{
+    background-color: white;
+}
+
+.button
+{
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #0C5;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;    
+  padding: 2px 2px;  
+  background: #0D6;
+  border: 1px solid #0D6;
+  color: #FFF;
+  overflow: hidden;  
+  transition: all 0.5s;
+}
+
+.button:hover, .button:active 
+{
+  text-decoration: none;
+  color: #0C5;
+  border-color: #0C5;
+  background: #FFF;
+}
+
+.button span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;  
+  transition: padding-right 0.5s;
+}
+
+.button span:after 
+{
+  content: ' ';  
+  opacity: 0;
+  margin-top: -10px;
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+.button:hover span, .button:active span 
+{
+  padding-right: 30px;
+}
+
+.button:hover span:after, .button:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #0C5;
+  right: 0;
+  top: 50%;
+}
+
+
+.moneyarea{
+    padding: 10px;
+    ddbackground-color: #fcf3cf;    
+-moz-border-radius:1px;  /* for Firefox */
+-webkit-border-radius:1px; /* for Webkit-Browsers */
+border-radius:1px; /* regular */
+opacity:1; /* Transparent Background 50% */
+}
+.captionarea{
+    width:70%;
+    padding: 10px;
+    ddbackground-color: #fcf3cf;    
+-moz-border-radius:3px;  /* for Firefox */
+-webkit-border-radius:10px; /* for Webkit-Browsers */
+border-radius:10px; /* regular */
+opacity:1; /* Transparent Background 50% */
+}
+
+.Active {
+    background-image: url("/wp-content/Hanging - sale.gif");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-x: 100px;
+    background-position-y: 0px;
+    
+}
+.Sold{
+    background-image: url("/wp-content/sold-banner.gif");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position-x: 100px;
+}
+.Rental{
+    background-image: url("/wp-content/Hanging - rental.gif");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position-x: 100px;
+    background-position-y: 0px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+body {
+  nobackground-color: #ffffff;
+ nobackground-repeat: no-repeat;
+ nobackground-size: cover;
+ font-family: sans-serif;
+
+}
+.magnertable{
+    height:100%;
+    width: 100%;
+    box-sizing: content-box;
+  border-width: 0px;
+  border-style: solid;
+  border-image-slice: 1;
+     
+ 
+}
